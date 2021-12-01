@@ -1,0 +1,37 @@
+{
+  "name": "mytoken",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "chain": "hardhat node --network hardhat --no-deploy",
+    "test": "hardhat test --network hardhat",
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "deploy": "hardhat deploy",
+    "verify": "hardhat verify",
+    "set-trading": "node script/set_trading.js",
+    "set-limits": "node script/set_limits.js",
+    "set-marketing-address": "node script/set_marketing_address.js"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "^2.1.7",
+    "@nomiclabs/hardhat-solhint": "^2.0.0",
+    "@openzeppelin/contracts": "^4.3.2",
+    "@tenderly/hardhat-tenderly": "^1.0.13",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.6.7",
+    "hardhat-abi-exporter": "^2.3.1",
+    "hardhat-contract-sizer": "^2.1.1",
+    "hardhat-deploy": "^0.9.4",
+    "hardhat-deploy-ethers": "^0.3.0-beta.11",
+    "hardhat-gas-reporter": "^1.0.4",
+    "hardhat-spdx-license-identifier": "^2.0.3",
+    "solidity-coverage": "^0.7.17"
+  }
+}
